@@ -12,8 +12,6 @@ body{
     width: 1080px;
     margin: auto;
 
-    
-
 }
 h2{
     font-style: normal;
@@ -201,74 +199,3 @@ article{
     color: #000000;
     padding-top: 7px;
 }
-
-
-
-
-
-@media screen and (min-width: 768px) and (max-width: 992px){
-    /* header section styles */
-    .banner-section{
-      display: grid;
-      grid-template-columns:1fr 1fr;
-      grid-row-gap: 30px;
-
-    }
-        
-  
-@media screen and (min-width: 480px) and (max-width: 768px){
-    /* header section styles */
-    .banner-section{
-      display: grid;
-      grid-template-columns:1fr;
-      grid-row-gap: 30px;
-
-    }
-        
-   h2{
-        font-size: 68px !important;
-        width: 500px;
-        height: 281px
-          
-      }
-  .banner-section .banner-image img{
-          width: 40%;
-          
-          
-      }
-article{
-    display: grid;
-    grid-template-columns:1fr 1fr !important;
-    grid-column-gap: 30px;
-    grid-row-gap: 27px;
-    }
-  
-}
-@media screen and (max-width: 480px){
-    /* header section styles */
-    .banner-section{
-        display: grid;
-        grid-template-columns:1fr !important;
-        grid-row-gap: 30px;
-       
-          
-    }
-    h2{
-        font-size: 50px;
-        height: 170px !important;
-        width: 200px;
-        
-    }
-    .banner-section .banner-image img{
-        width: 40%;
-        
-    }
-
-    /* player section styles */
-    article{
-        display: grid;
-        grid-template-columns:1fr !important;
-        grid-column-gap: 30px;
-        grid-row-gap: 27px;
-    }
-  }
