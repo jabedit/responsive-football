@@ -51,12 +51,44 @@ button{
 button a{
     text-decoration: none;
     color: white;
+    text-transform: capitalize;
 
+}
+button:hover{
+    background: rgb(109, 48, 68);
+     color: white;
 }
 /* start navbar secton */
 .main-navbar{
     display: flex;
+    justify-content: space-between;
+    padding-top: 42px;
     
+
+}
+.navbar{
+    
+}
+.navbar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main-navbar .navbar ul li{
+   float: left;
+   margin-right: 20px;
+   
+    
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
 }
 /* start banner styles */
 header{
@@ -66,7 +98,8 @@ header{
 .banner-section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 84px 0;
+    padding: 40px 0 84px 0;
+    background-color:#2D25A0 ;
     
     
 }
@@ -83,7 +116,9 @@ header{
 
 /* start player section styles */
 
-
+.player-profile{
+    padding: 40px 0 84px 0;
+}
 article{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -166,3 +201,74 @@ article{
     color: #000000;
     padding-top: 7px;
 }
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    /* header section styles */
+    .banner-section{
+      display: grid;
+      grid-template-columns:1fr 1fr;
+      grid-row-gap: 30px;
+
+    }
+        
+  
+@media screen and (min-width: 480px) and (max-width: 768px){
+    /* header section styles */
+    .banner-section{
+      display: grid;
+      grid-template-columns:1fr;
+      grid-row-gap: 30px;
+
+    }
+        
+   h2{
+        font-size: 68px !important;
+        width: 500px;
+        height: 281px
+          
+      }
+  .banner-section .banner-image img{
+          width: 40%;
+          
+          
+      }
+article{
+    display: grid;
+    grid-template-columns:1fr 1fr !important;
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    }
+  
+}
+@media screen and (max-width: 480px){
+    /* header section styles */
+    .banner-section{
+        display: grid;
+        grid-template-columns:1fr !important;
+        grid-row-gap: 30px;
+       
+          
+    }
+    h2{
+        font-size: 50px;
+        height: 170px !important;
+        width: 200px;
+        
+    }
+    .banner-section .banner-image img{
+        width: 40%;
+        
+    }
+
+    /* player section styles */
+    article{
+        display: grid;
+        grid-template-columns:1fr !important;
+        grid-column-gap: 30px;
+        grid-row-gap: 27px;
+    }
+  }
