@@ -58,15 +58,16 @@ button:hover{
 }
 /* start navbar secton */
 .main-navbar{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: space-between;
     padding-top: 42px;
+    background-color:#2D25A0 ;
+    background-size: cover;
     
 
 }
-.navbar{
-    
-}
+
 .navbar ul{
     list-style-type: none;
     padding: 0;
@@ -153,6 +154,12 @@ article{
 /* end player section styles */
 
 /* start highlight section styles */
+#highlight-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 0 84px 0;
+    background-color:#F9F9F9; ;
+}
 #highlight-section h2{
     font-family: Poppins;
     font-style: normal;
@@ -164,14 +171,14 @@ article{
 }
 #highlight-section p{
     width: 404px;
-    height: 113px
+    height: 113px;
 }
 /* end highlight section styles */
 
 /* start highlight-section styles */
 .footer-section{
     display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-columns: repeat(3, 1fr);
 }
 .footer-content{
     display: flex;
